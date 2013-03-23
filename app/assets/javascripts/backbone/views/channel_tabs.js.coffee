@@ -37,5 +37,5 @@ class Kandan.Views.ChannelTabs extends Backbone.View
 
   deleteChannel: (event)->
     channelIndex = $(event.target).parents('li').prevAll().length
-    Kandan.Helpers.Channels.deleteChannelByTabIndex(channelIndex) if channelIndex != 0
+    Kandan.Helpers.Channels.deleteChannelByTabIndex(channelIndex)
     return false

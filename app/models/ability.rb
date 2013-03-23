@@ -20,7 +20,5 @@ class Ability
       can :manage, User, :id => user.id # can manage themselves
     end
     can :read, User
-    # This goes last in order to override all other permissions.
-    cannot :destroy, Channel, :id => 1
   end
 end
